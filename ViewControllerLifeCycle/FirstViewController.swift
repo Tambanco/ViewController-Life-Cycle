@@ -17,7 +17,7 @@ class FirstViewController: UIViewController {
     override func awakeFromNib() {
         showMethod(methodName: #function, viewController: self)
     }
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         showMethod(methodName: #function, viewController: self)
@@ -44,6 +44,12 @@ class FirstViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         showMethod(methodName: #function, viewController: self)
     }
+    
+    override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
+        showMethod(methodName: #function, viewController: self)
+    }
+    
+    // MARK: - Button Actions
 
     @IBAction func nextVCAction(_ sender: UIButton) {
         
