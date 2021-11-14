@@ -46,6 +46,10 @@ class SecondViewController: UIViewController {
         showMethod(methodName: #function, viewController: self)
     }
     
+    override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
+        showMethod(methodName: #function, viewController: self)
+    }
+    
     @IBAction func dismissButtonAction(_ sender: UIButton) {
         dismiss(animated: true, completion: nil)
         print("DISMISS SECOND VC BUTTON TAPED")
