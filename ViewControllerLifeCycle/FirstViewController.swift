@@ -9,11 +9,11 @@
 import UIKit
 
 class FirstViewController: UIViewController {
-    // MARK:  Outlets
+// MARK:  Outlets
     @IBOutlet weak var showSecondVCButton: UIButton!
     @IBOutlet weak var firstVCLabel: UILabel!
     
-    
+// MARK:  ViewController life cycle
     override func awakeFromNib() {
         showMethod(methodName: #function, viewController: self)
     }

@@ -14,6 +14,7 @@ class SecondViewController: UIViewController {
     @IBOutlet weak var dismissButton: UIButton!
     @IBOutlet weak var secondVCLabel: UILabel!
     
+// MARK:  ViewController life cycle
     override func awakeFromNib() {
         showMethod(methodName: #function, viewController: self)
     }
@@ -45,10 +46,8 @@ class SecondViewController: UIViewController {
         showMethod(methodName: #function, viewController: self)
     }
     
-    
     @IBAction func dismissButtonAction(_ sender: UIButton) {
         dismiss(animated: true, completion: nil)
         print("DISMISS SECOND VC BUTTON TAPED")
     }
-    
 }

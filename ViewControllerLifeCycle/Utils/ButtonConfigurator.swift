@@ -10,5 +10,6 @@ import UIKit
 
 public func buttonConfigurator(button: UIButton) {
     button.layer.cornerRadius = 10
-    button.layer.borderColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
+    button.layer.borderWidth = 1
+    button.layer.borderColor = #colorLiteral(red: 0.05882352963, green: 0.180392161, blue: 0.2470588237, alpha: 1)
 }
